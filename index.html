@@ -1,119 +1,782 @@
-Privacy Policy for Dayrune
-Last updated: September 25, 2026
-Dayrune is a habit tracking application developed by The Coco Studio.
-This Privacy Policy explains how Dayrune accesses, stores, uses, and handles information when you use the application.
-Dayrune is designed as a local-first application. It does not require an account, and the current version does not use advertising, analytics, cloud synchronization, attribution, telemetry, or third-party crash-reporting services.
-1. Information stored by Dayrune
-Dayrune allows you to create and manage habits and routines.
-Information stored by the app may include:
-- habit names and descriptions
-- habit icons and colors
-- habit schedules and frequencies
-- reminder times and configurations
-- habit completion history
-- streak information
-- analytics calculated from your habit activity
-- application preferences and settings
-- theme and interface preferences
-Your primary habit information and completion history are stored locally on your device using Android local storage technologies.
-Dayrune does not transmit this habit information to The Coco Studio.
-2. Personal information and accounts
-Dayrune does not require account creation or sign-in.
-The current version of Dayrune does not request your:
-- name
-- postal address
-- phone number
-- date of birth
-- account credentials
-- contacts
-- precise location
-The Coco Studio does not maintain a user account or remote user profile for Dayrune users.
-3. Data collection
-The current version of Dayrune does not contain advertising, analytics, attribution, telemetry, cloud-storage, or third-party crash-reporting SDKs.
-Dayrune does not intentionally transmit your habit data, completion history, app preferences, or locally calculated analytics to The Coco Studio.
-Information that is processed entirely on your device is not sent to Dayrune-operated servers.
-4. Data sharing
-The Coco Studio does not sell your Dayrune data.
-The current version of Dayrune does not share habit data with advertisers, analytics providers, data brokers, or other third-party services.
-Dayrune does not contain advertising SDKs.
-5. Health and fitness-related habits
-Dayrune is a general-purpose habit tracker.
-You may choose to create habits relating to topics such as:
-- exercise
-- walking
-- hydration
-- nutrition
-- supplements
-- sleep
-- personal routines
-Dayrune does not currently connect to Health Connect or other health-data platforms, and it does not access medical records, fitness sensors, or health databases.
-Any habit information you manually enter is treated as local application data and remains on your device as described in this policy.
-Dayrune is not intended to provide medical diagnosis, treatment, or professional medical advice.
-6. Permissions
-Dayrune may request or use the following Android permissions.
-Notifications
-Dayrune uses notification permission to display habit reminders that you choose to configure.
-You can control notification access through your Android device settings.
-Boot completed
-Dayrune may use Android's boot-completed functionality to restore or reschedule your configured habit reminders after your device restarts.
-This permission is used to support reminder functionality.
-Dayrune does not use these permissions to transmit your habit information to The Coco Studio.
-7. Internet and network access
-The audited version of Dayrune does not declare the Android INTERNET permission and does not perform app-controlled network communication.
-When you select an external link such as the Privacy Policy from within Dayrune, the link may be opened by your device's web browser. Network activity performed by your browser is governed by that browser and the destination website rather than by Dayrune itself.
-8. Android backup and device transfer
-Android provides system-level backup and device-transfer functionality.
-Dayrune's primary Room database containing habits, schedules, completion history, and related habit data is configured to be excluded from Android cloud backup and device transfer.
-Some Dayrune preferences stored through Android DataStore may currently be eligible for Android system backup or device transfer, depending on:
-- your Android device
-- your operating-system settings
-- your Google account settings
-- the backup services enabled on your device
-These backup operations are provided by the Android platform and are not operated by The Coco Studio.
-Users can manage Android backup settings through their device or Google account settings.
-9. Data retention
-Dayrune's primary application data remains locally on your device for as long as you keep it there.
-Habit information may remain until you:
-- delete relevant information within Dayrune where that option is available
-- clear Dayrune's application storage through Android settings
-- uninstall Dayrune
-The Coco Studio does not maintain a remote copy of your Dayrune habit database.
-Some application preferences that have been included in an Android system backup may remain according to the retention practices of your device's backup provider.
-10. Deleting your data
-Because Dayrune does not use user accounts or operate a remote habit-data service, there is no remote Dayrune account to delete.
-You can remove locally stored Dayrune data by:
-- deleting habits or related information within the app where supported
-- opening Android Settings and clearing Dayrune's app storage
-- uninstalling Dayrune from your device
-Clearing app storage or uninstalling the application removes locally stored Dayrune data from that installation, subject to any system-level backup or restoration functionality controlled by Android.
-11. Data security
-Dayrune is designed to minimize data exposure by keeping its primary habit information on the user's device.
-The current version does not transmit your habit database to The Coco Studio servers.
-Security of locally stored information also depends on the security of your Android device. We recommend keeping your operating system updated and using appropriate device security such as a screen lock.
-12. Advertising and analytics
-The current version of Dayrune:
-- does not contain advertisements
-- does not use advertising SDKs
-- does not use analytics SDKs
-- does not use attribution SDKs
-- does not use third-party telemetry
-- does not use third-party crash-reporting services
-If these practices change in a future version, this Privacy Policy and the Google Play Data Safety declaration will be updated as appropriate.
-13. Children's privacy
-Dayrune does not knowingly collect personal information from children through accounts, advertising, analytics, or cloud services.
-If Dayrune's functionality or intended audience changes in a future version, this policy will be updated accordingly.
-14. Third-party services
-The current audited version of Dayrune does not use third-party services for advertising, analytics, account management, cloud synchronization, or crash reporting.
-System-level Android services, including optional device backup or transfer functionality, may operate independently of Dayrune and are governed by the applicable platform provider's terms and privacy policies.
-15. Future features
-Future versions of Dayrune may introduce optional features such as cloud backup, synchronization, premium functionality, or other services.
-Such features are not part of the current version described by this Privacy Policy.
-If future features change how user data is collected, transmitted, stored, or shared, this Privacy Policy and applicable Google Play disclosures will be updated before or alongside those changes.
-16. Changes to this Privacy Policy
-The Coco Studio may update this Privacy Policy when Dayrune's features, technical implementation, legal obligations, or data practices change.
-The latest version of this Privacy Policy will be made available through the Privacy Policy link inside Dayrune and through its Google Play listing.
-The "Last updated" date at the top of this policy will indicate when the policy was most recently revised.
-17. Contact
-If you have questions, concerns, or requests relating to privacy or Dayrune's data practices, contact:
-The Coco Studio
-Email: studiothecoco@gmail.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dayrune Privacy Policy</title>
+    <meta
+        name="description"
+        content="Privacy Policy for Dayrune, a local-first habit tracking app by The Coco Studio."
+    >
+
+    <style>
+        :root {
+            --bg: #070910;
+            --surface: #0f1320;
+            --surface-soft: #12182a;
+            --border: #202842;
+
+            --text: #f7f7fb;
+            --text-soft: #c8ccda;
+            --text-muted: #8f96aa;
+
+            --accent: #7382ff;
+            --accent-2: #9b6cff;
+            --accent-3: #42d9ff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                Inter,
+                ui-sans-serif,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(93, 83, 255, 0.15),
+                    transparent 32%
+                ),
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(66, 217, 255, 0.08),
+                    transparent 28%
+                ),
+                var(--bg);
+
+            color: var(--text);
+            line-height: 1.75;
+        }
+
+        a {
+            color: #8ea0ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .page {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 64px 24px 96px;
+        }
+
+        .hero {
+            margin-bottom: 48px;
+        }
+
+        .brand {
+            display: inline-block;
+            margin-bottom: 14px;
+
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+
+            background: linear-gradient(
+                90deg,
+                var(--accent-3),
+                var(--accent),
+                var(--accent-2)
+            );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(38px, 7vw, 64px);
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+        }
+
+        .updated {
+            margin-top: 16px;
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        .intro {
+            margin-top: 32px;
+            padding: 24px;
+
+            background: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.035),
+                rgba(255, 255, 255, 0.02)
+            );
+
+            border: 1px solid var(--border);
+            border-radius: 20px;
+        }
+
+        .intro p:first-child {
+            margin-top: 0;
+        }
+
+        .intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        section {
+            margin-top: 52px;
+        }
+
+        h2 {
+            margin: 0 0 16px;
+            font-size: 24px;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            margin: 28px 0 10px;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0 0 16px;
+            color: var(--text-soft);
+        }
+
+        ul {
+            margin: 12px 0 20px;
+            padding-left: 24px;
+            color: var(--text-soft);
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        code {
+            padding: 2px 7px;
+            border-radius: 6px;
+            background: var(--surface-soft);
+            color: #d8ddff;
+            font-size: 0.95em;
+        }
+
+        .contact-card {
+            margin-top: 24px;
+            padding: 24px;
+
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+        }
+
+        .contact-card p {
+            margin: 5px 0;
+        }
+
+        footer {
+            margin-top: 72px;
+            padding-top: 28px;
+
+            border-top: 1px solid var(--border);
+
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        @media (max-width: 640px) {
+            .page {
+                padding: 40px 20px 72px;
+            }
+
+            .intro {
+                padding: 20px;
+            }
+
+            section {
+                margin-top: 44px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="page">
+
+    <header class="hero">
+
+        <div class="brand">The Coco Studio</div>
+
+        <h1>Dayrune Privacy Policy</h1>
+
+        <div class="updated">
+            Last updated: September 25, 2026
+        </div>
+
+        <div class="intro">
+
+            <p>
+                Dayrune is a habit tracking application developed by
+                <strong>The Coco Studio</strong>.
+                This Privacy Policy explains how Dayrune accesses, stores,
+                uses, and handles information when you use the application.
+            </p>
+
+            <p>
+                Dayrune is designed as a <strong>local-first application</strong>.
+                It does not require an account, and the current version does not
+                use advertising, analytics, cloud synchronization, attribution,
+                telemetry, or third-party crash-reporting services.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <section>
+
+        <h2>1. Information stored by Dayrune</h2>
+
+        <p>
+            Dayrune allows you to create and manage habits and routines.
+        </p>
+
+        <p>
+            Information stored by the app may include:
+        </p>
+
+        <ul>
+            <li>Habit names and descriptions</li>
+            <li>Habit icons and colors</li>
+            <li>Habit schedules and frequencies</li>
+            <li>Reminder times and configurations</li>
+            <li>Habit completion history</li>
+            <li>Streak information</li>
+            <li>Analytics calculated from your habit activity</li>
+            <li>Application preferences and settings</li>
+            <li>Theme and interface preferences</li>
+        </ul>
+
+        <p>
+            Your primary habit information and completion history are stored
+            locally on your device using Android local storage technologies.
+        </p>
+
+        <p>
+            Dayrune does not transmit this habit information to The Coco Studio.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>2. Personal information and accounts</h2>
+
+        <p>
+            Dayrune does not require account creation or sign-in.
+        </p>
+
+        <p>
+            The current version of Dayrune does not request your:
+        </p>
+
+        <ul>
+            <li>Name</li>
+            <li>Postal address</li>
+            <li>Phone number</li>
+            <li>Date of birth</li>
+            <li>Account credentials</li>
+            <li>Contacts</li>
+            <li>Precise location</li>
+        </ul>
+
+        <p>
+            The Coco Studio does not maintain a user account or remote user
+            profile for Dayrune users.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>3. Data collection</h2>
+
+        <p>
+            The current version of Dayrune does not contain advertising,
+            analytics, attribution, telemetry, cloud-storage, or third-party
+            crash-reporting SDKs.
+        </p>
+
+        <p>
+            Dayrune does not intentionally transmit your habit data,
+            completion history, app preferences, or locally calculated
+            analytics to The Coco Studio.
+        </p>
+
+        <p>
+            Information that is processed entirely on your device is not sent
+            to Dayrune-operated servers.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>4. Data sharing</h2>
+
+        <p>
+            The Coco Studio does not sell your Dayrune data.
+        </p>
+
+        <p>
+            The current version of Dayrune does not share habit data with:
+        </p>
+
+        <ul>
+            <li>Advertisers</li>
+            <li>Analytics providers</li>
+            <li>Data brokers</li>
+            <li>Attribution providers</li>
+            <li>Other third-party services</li>
+        </ul>
+
+        <p>
+            Dayrune does not contain advertising SDKs.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>5. Health and fitness-related habits</h2>
+
+        <p>
+            Dayrune is a general-purpose habit tracker.
+        </p>
+
+        <p>
+            You may choose to create habits relating to topics such as:
+        </p>
+
+        <ul>
+            <li>Exercise</li>
+            <li>Walking</li>
+            <li>Hydration</li>
+            <li>Nutrition</li>
+            <li>Supplements</li>
+            <li>Sleep</li>
+            <li>Personal routines</li>
+        </ul>
+
+        <p>
+            Dayrune does not currently connect to Health Connect or other
+            health-data platforms, and it does not access medical records,
+            fitness sensors, or health databases.
+        </p>
+
+        <p>
+            Any habit information you manually enter is treated as local
+            application data and remains on your device as described in this
+            policy.
+        </p>
+
+        <p>
+            Dayrune is not intended to provide medical diagnosis, treatment,
+            or professional medical advice.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>6. Permissions</h2>
+
+        <p>
+            Dayrune may request or use the following Android permissions.
+        </p>
+
+        <h3>Notifications</h3>
+
+        <p>
+            Dayrune uses notification permission to display habit reminders
+            that you choose to configure.
+        </p>
+
+        <p>
+            You can control notification access through your Android device
+            settings.
+        </p>
+
+        <h3>Boot completed</h3>
+
+        <p>
+            Dayrune may use Android's boot-completed functionality to restore
+            or reschedule your configured habit reminders after your device
+            restarts.
+        </p>
+
+        <p>
+            This permission is used only to support reminder functionality.
+        </p>
+
+        <p>
+            Dayrune does not use these permissions to transmit your habit
+            information to The Coco Studio.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>7. Internet and network access</h2>
+
+        <p>
+            The audited version of Dayrune does not declare the Android
+            <code>INTERNET</code> permission and does not perform
+            app-controlled network communication.
+        </p>
+
+        <p>
+            When you select an external link such as the Privacy Policy from
+            within Dayrune, the link may be opened by your device's web
+            browser.
+        </p>
+
+        <p>
+            Network activity performed by your browser is governed by that
+            browser and the destination website rather than by Dayrune itself.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>8. Android backup and device transfer</h2>
+
+        <p>
+            Android provides system-level backup and device-transfer
+            functionality.
+        </p>
+
+        <p>
+            Dayrune's primary Room database containing habits, schedules,
+            completion history, and related habit data is configured to be
+            excluded from Android cloud backup and device transfer.
+        </p>
+
+        <p>
+            Some Dayrune preferences stored through Android DataStore may
+            currently be eligible for Android system backup or device transfer,
+            depending on:
+        </p>
+
+        <ul>
+            <li>Your Android device</li>
+            <li>Your operating-system settings</li>
+            <li>Your Google account settings</li>
+            <li>The backup services enabled on your device</li>
+        </ul>
+
+        <p>
+            These backup operations are provided by the Android platform and
+            are not operated by The Coco Studio.
+        </p>
+
+        <p>
+            Users can manage Android backup settings through their device or
+            Google account settings.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>9. Data retention</h2>
+
+        <p>
+            Dayrune's primary application data remains locally on your device
+            for as long as you keep it there.
+        </p>
+
+        <p>
+            Habit information may remain until you:
+        </p>
+
+        <ul>
+            <li>Delete relevant information within Dayrune where supported</li>
+            <li>Clear Dayrune's application storage through Android settings</li>
+            <li>Uninstall Dayrune</li>
+        </ul>
+
+        <p>
+            The Coco Studio does not maintain a remote copy of your Dayrune
+            habit database.
+        </p>
+
+        <p>
+            Some application preferences that have been included in an Android
+            system backup may remain according to the retention practices of
+            your device's backup provider.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>10. Deleting your data</h2>
+
+        <p>
+            Because Dayrune does not use user accounts or operate a remote
+            habit-data service, there is no remote Dayrune account to delete.
+        </p>
+
+        <p>
+            You can remove locally stored Dayrune data by:
+        </p>
+
+        <ul>
+            <li>
+                Deleting habits or related information within the app where
+                supported
+            </li>
+
+            <li>
+                Opening Android Settings and clearing Dayrune's app storage
+            </li>
+
+            <li>
+                Uninstalling Dayrune from your device
+            </li>
+        </ul>
+
+        <p>
+            Clearing app storage or uninstalling the application removes
+            locally stored Dayrune data from that installation, subject to any
+            system-level backup or restoration functionality controlled by
+            Android.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>11. Data security</h2>
+
+        <p>
+            Dayrune is designed to minimize data exposure by keeping its
+            primary habit information on the user's device.
+        </p>
+
+        <p>
+            The current version does not transmit your habit database to
+            The Coco Studio servers.
+        </p>
+
+        <p>
+            Security of locally stored information also depends on the
+            security of your Android device.
+        </p>
+
+        <p>
+            We recommend keeping your operating system updated and using
+            appropriate device security such as a screen lock.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>12. Advertising and analytics</h2>
+
+        <p>
+            The current version of Dayrune:
+        </p>
+
+        <ul>
+            <li>Does not contain advertisements</li>
+            <li>Does not use advertising SDKs</li>
+            <li>Does not use analytics SDKs</li>
+            <li>Does not use attribution SDKs</li>
+            <li>Does not use third-party telemetry</li>
+            <li>Does not use third-party crash-reporting services</li>
+        </ul>
+
+        <p>
+            If these practices change in a future version, this Privacy Policy
+            and the Google Play Data Safety declaration will be updated as
+            appropriate.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>13. Children's privacy</h2>
+
+        <p>
+            Dayrune does not knowingly collect personal information from
+            children through accounts, advertising, analytics, or cloud
+            services.
+        </p>
+
+        <p>
+            If Dayrune's functionality or intended audience changes in a
+            future version, this policy will be updated accordingly.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>14. Third-party services</h2>
+
+        <p>
+            The current audited version of Dayrune does not use third-party
+            services for:
+        </p>
+
+        <ul>
+            <li>Advertising</li>
+            <li>Analytics</li>
+            <li>Account management</li>
+            <li>Cloud synchronization</li>
+            <li>Attribution</li>
+            <li>Crash reporting</li>
+        </ul>
+
+        <p>
+            System-level Android services, including optional device backup or
+            transfer functionality, may operate independently of Dayrune and
+            are governed by the applicable platform provider's terms and
+            privacy policies.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>15. Future features</h2>
+
+        <p>
+            Future versions of Dayrune may introduce optional features such as:
+        </p>
+
+        <ul>
+            <li>Cloud backup</li>
+            <li>Cross-device synchronization</li>
+            <li>Premium functionality</li>
+            <li>Additional integrations or services</li>
+        </ul>
+
+        <p>
+            These features are not part of the current version described by
+            this Privacy Policy.
+        </p>
+
+        <p>
+            If future features change how user data is collected, transmitted,
+            stored, or shared, this Privacy Policy and applicable Google Play
+            disclosures will be updated before or alongside those changes.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>16. Changes to this Privacy Policy</h2>
+
+        <p>
+            The Coco Studio may update this Privacy Policy when Dayrune's
+            features, technical implementation, legal obligations, or data
+            practices change.
+        </p>
+
+        <p>
+            The latest version of this Privacy Policy will be made available
+            through the Privacy Policy link inside Dayrune and through its
+            Google Play listing.
+        </p>
+
+        <p>
+            The "Last updated" date at the top of this policy will indicate
+            when the policy was most recently revised.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>17. Contact</h2>
+
+        <div class="contact-card">
+
+            <p>
+                If you have questions, concerns, or requests relating to
+                privacy or Dayrune's data practices, contact:
+            </p>
+
+            <p>
+                <strong>The Coco Studio</strong>
+            </p>
+
+            <p>
+                Email:
+                <a href="mailto:studiothecoco@gmail.com">
+                    studiothecoco@gmail.com
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 The Coco Studio · Dayrune
+
+    </footer>
+
+</main>
+
+</body>
+</html>
